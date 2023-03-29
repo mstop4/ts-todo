@@ -7,7 +7,6 @@ A basic TODO checklist app done to get more comfortable with Typescript. Based o
 - Add tasks
 - Check and uncheck tasks
 - Saves task list to local storage
-- Uses Github Action for deployment
 - Minimalist design
 
 ## Note
