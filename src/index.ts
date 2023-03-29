@@ -1,10 +1,10 @@
 import { v4 as uuidV4 } from 'uuid';
 
-type Task = { 
-  id: string,
-  title: string,
-  completed: boolean,
-  createdAt: Date
+type Task = {
+  id: string;
+  title: string;
+  completed: boolean;
+  createdAt: Date;
 };
 
 const list = document.querySelector<HTMLUListElement>('#list');
@@ -14,7 +14,7 @@ const tasks: Task[] = loadTasks();
 
 tasks.forEach(addListItem);
 
-form?.addEventListener('submit', e => {
+form?.addEventListener('submit', (e) => {
   e.preventDefault();
 
   if (input?.value == '' || input?.value == null) return;
@@ -23,7 +23,7 @@ form?.addEventListener('submit', e => {
     id: uuidV4(),
     title: input.value,
     completed: false,
-    createdAt: new Date()
+    createdAt: new Date(),
   };
   tasks.push(newTask);
 
